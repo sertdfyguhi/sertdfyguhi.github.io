@@ -21,6 +21,29 @@ a {
   padding: 3px 20px;
   letter-spacing: 1px;
   margin: 0px 2px;
+  transition: letter-spacing 0.7s;
+}
+
+a:hover {
+  letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 450px) {
+  #yt {
+    position: relative;
+    top: 15px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #twitter {
+    position: relative;
+    top: 15px;
+    left: 3px;
+  }
+  #yt {
+    left: 3px;
+  }
 }
 
 .header {
