@@ -1,4 +1,3 @@
-let on_gradient = 0
 const gradients = [
   ['#4CA1AF', '#C4E0E5'],
   ['#4B79A1', '#283E51'],
@@ -17,12 +16,9 @@ const gradients = [
   ['#d649d1', '#d69949'],
 ]
 
-function next_gradient() {
-  if (on_gradient > gradients.length - 1) {
-    on_gradient = 0
-  }
-  document.body.style.background = `linear-gradient(90deg, ${gradients[on_gradient][0]}, ${gradients[on_gradient][1]})`
-  on_gradient++
+function gradient() {
+  const rn = Math.floor(Math.random() * gradients.length);
+  document.body.style.background = `linear-gradient(90deg, ${gradients[rn][0]}, ${gradients[rn][1]})`
 }
 
-next_gradient()
+gradient()
