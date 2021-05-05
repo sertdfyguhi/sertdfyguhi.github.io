@@ -1,4 +1,3 @@
-let btn = document.querySelector('button')
 let on_gradient = 0
 const gradients = [
   ['#4CA1AF', '#C4E0E5'],
@@ -26,16 +25,4 @@ function next_gradient() {
   on_gradient++
 }
 
-btn.addEventListener('focus', function () {
-  btn.style.opacity = '0.7'
-})
-
-btn.addEventListener('blur', function () {
-  btn.style.opacity = '0'
-})
-
-btn.addEventListener('mousedown', function () {
-  if (document.activeElement == btn) {
-    next_gradient()
-  }
-})
+next_gradient()
