@@ -12,11 +12,12 @@ a {
   display: inline;
   border: white solid 1px;
   color: white;
-  text-decoration: none;
   font-family: 'Inria Sans';
+  font-style: italic;
+  text-decoration: none;
   text-align: center;
-  padding: 3px 20px;
   letter-spacing: 1px;
+  padding: 3px 20px;
   margin: 0px 2px;
   transition: letter-spacing 0.7s, background-color 0.5s;
 }
@@ -33,9 +34,11 @@ a:hover {
 }
 
 .caret {
+  display: inline-block;
   position: relative;
   bottom: 1px;
   right: 8px;
+  width: 0px;
   animation: 1s blink cubic-bezier(.5, .2, .5, 5.0) infinite;
 }
 
