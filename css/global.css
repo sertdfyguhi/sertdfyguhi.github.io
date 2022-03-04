@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=Inria+Sans:ital,wght@1,300&display=swap');
 
 body {
+  font-family: 'DM Mono';
   display: flex;
   justify-content: center;
   align-items: center;
   height: 90vh;
   color: white;
+}
+
+.inria_sans {
   font-family: 'Inria Sans';
+  font-style: italic;
 }
 
 .opacity {
