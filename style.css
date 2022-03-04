@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=Inria+Sans:ital,wght@1,300&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  color: white;
+}
+
+a {
+  display: inline;
+  border: white solid 1px;
+  color: white;
+  font-family: 'Inria Sans';
+  font-style: italic;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 3px 20px;
+  margin: 0px 2px;
+  transition: letter-spacing 0.7s, background-color 0.5s;
+}
+
+a:hover {
+  letter-spacing: 2px;
+  background-color: rgba(255, 255, 255, 0.155);
+}
+
+.header {
+  margin: 10px;
+  font-family: 'DM Mono';
+  font-weight: 600;
+}
+
+.caret {
+  display: inline-block;
+  position: relative;
+  bottom: 1px;
+  right: 8px;
+  width: 0px;
+  animation: 1s blink cubic-bezier(.5, .2, .5, 5.0) infinite;
+}
+
+@keyframes blink {
+  from, to {
+    opacity: 0.0;
+  }
+  50% {
+    opacity: 1.0;
+  }
+}
