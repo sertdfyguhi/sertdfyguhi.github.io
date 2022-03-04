@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=Inria+Sans:ital,wght@1,300&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  color: white;
+  font-family: 'Inria Sans';
+}
+
+.opacity {
+  opacity: 0;
+  transition: opacity 1s;
+  margin: 2px;
+}
+
+.caret {
+  display: inline-block;
+  position: relative;
+  bottom: 1px;
+  right: 8px;
+  width: 0px;
+  animation: 1s blink cubic-bezier(.5, .2, .5, 5.0) infinite;
+}
+
+@keyframes blink {
+  from, to {
+    opacity: 0.0;
+  }
+  50% {
+    opacity: 1.0;
+  }
+}

@@ -1,0 +1,19 @@
+.nav {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  padding: 0%;
+  margin-right: 10px;
+  letter-spacing: 1px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  transition: letter-spacing 0.5s;
+  margin: 22px;
+}
+
+.nav a:hover {
+  letter-spacing: 2px;
+}

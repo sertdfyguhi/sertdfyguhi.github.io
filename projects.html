@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>projects</title>
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/nav.css">
+  <link rel="stylesheet" href="/css/projects.css">
+</head>
+<body>
+  <nav class="nav">
+    <h3>
+      <a href="/">home</a>
+      <a href="/projects.html">projects</a>
+      <a href="/aboutme.html">about me</a>
+    </h3>
+  </nav>
+
+  <div style="font-family: 'DM Mono';">
+    <h1 style="margin: 2px;"><span id="header"></span><span class="caret">|</span></h1>
+    <p class="projects opacity">
+      <a href="https://github.com/sertdfyguhi/shitlang">shitlang</a>
+       - its a shit "programming language" that has no parser that is written in python<br>
+      <a href="https://github.com/sertdfyguhi/spck-server">spck server</a> &
+      <a href="https://github.com/sertdfyguhi/spck-cli">spck cli</a>
+       - a incomplete, useless, shit and discontinued package manager for 
+       <a href="https://github.com/Spu7Nix/SPWN-language">spwn</a>
+    </p>
+  </div>
+
+  <script src="/js/main.js"></script>
+
+  <script>
+    const elements = document.getElementsByClassName('opacity')
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].style.opacity = 1
+    }
+
+    type(
+      document.getElementById('header'),
+      'projects'
+    )
+  </script>
+</body>
+</html>
