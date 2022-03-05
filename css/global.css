@@ -1,16 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=Inria+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=Source+Sans+Pro:ital,wght@1,300&display=swap');
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+  margin: 0%;
+}
 
 body {
   font-family: 'DM Mono';
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 98.1vh;
   color: white;
 }
 
-.inria_sans {
-  font-family: 'Inria Sans';
+.source_sans_pro {
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: italic;
 }
 
