@@ -25,4 +25,4 @@ const rgb2 = [
   Math.floor(Math.random() * 256)
 ]
 
-document.body.style.background = `linear-gradient(90deg, rgb(${rgb1.join(', ')}), rgb(${rgb2.join(', ')}))`
+document.body.style.background = `linear-gradient(0deg, rgb(${rgb1.join(', ')}), rgb(${rgb2.join(', ')}))`
