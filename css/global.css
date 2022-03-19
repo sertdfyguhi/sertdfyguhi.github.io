@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=Source+Sans+Pro:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=Inter:wght@200&display=swap');
 
 html, body {
   height: 100%;
@@ -18,8 +18,8 @@ div {
   margin: 30px;
 }
 
-.source_sans_pro {
-  font-family: 'Source Sans Pro', sans-serif;
+.sans-serif {
+  font-family: 'Inter', sans-serif;
   font-style: italic;
 }
 
