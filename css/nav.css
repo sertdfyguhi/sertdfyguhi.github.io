@@ -18,10 +18,11 @@
 .nav a {
   text-decoration: none;
   color: white;
-  transition: letter-spacing 0.5s;
+  transition: letter-spacing 0.55s, text-shadow 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   margin: 22px;
 }
 
 .nav a:hover {
   letter-spacing: 3px;
+  text-shadow: 10px 15px #e8e8e8b1, 0 0 15px rgba(255, 255, 255, 0.765);
 }

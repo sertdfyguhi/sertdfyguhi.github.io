@@ -7,12 +7,13 @@
   letter-spacing: 1px;
   padding: 3px 20px;
   margin: 0px 2px;
-  transition: letter-spacing 0.7s, background-color 0.5s;
+  transition: letter-spacing 0.7s, background-color 0.5s, box-shadow 0.4s;
 }
 
 .links a:hover {
   letter-spacing: 2px;
   background-color: rgba(255, 255, 255, 0.155);
+  box-shadow: 0px 0px 20px 3px #ffffff25;
 }
 
 .header {
