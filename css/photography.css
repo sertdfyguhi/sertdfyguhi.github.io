@@ -1,0 +1,20 @@
+.info-container {
+  margin: 150px;
+}
+
+ul {
+  margin: 0%;
+}
+
+img {
+  width: 500px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.4s, width 0.5s;
+}
+
+img:hover {
+  width: 502px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
+}

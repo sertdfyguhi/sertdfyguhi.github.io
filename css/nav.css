@@ -5,6 +5,8 @@
   padding: 0%;
   margin-right: 8px;
   letter-spacing: 1px;
+  width: 100%;
+  text-align: right;
 }
 
 @media only screen and (max-width: 500px) {
@@ -18,7 +20,7 @@
 .nav a {
   text-decoration: none;
   color: white;
-  transition: letter-spacing 0.55s, text-shadow 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: letter-spacing 0.55s, text-shadow 0.25s ease-out;
   margin: 22px;
 }
 

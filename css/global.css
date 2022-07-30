@@ -19,6 +19,7 @@ html, body {
 
 body {
   font-family: 'Operator Mono', monospace;
+  height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,6 +37,11 @@ p {
 
 a {
   color: white;
+  transition: text-shadow 0.3s;
+}
+
+a:hover {
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.765);
 }
 
 .sans-serif {
