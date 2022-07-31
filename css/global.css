@@ -57,6 +57,13 @@ a:hover {
   color: white;
 }
 
+@media only screen and (max-width: 600px) {
+  .info-container {
+    width: 80%;
+    padding: 10px 12px;
+  }
+}
+
 .opacity {
   opacity: 0;
   transition: opacity 1s;
