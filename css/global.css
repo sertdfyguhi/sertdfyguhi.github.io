@@ -1,24 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
-
 @font-face {
-  font-family: 'Operator Mono';
-  font-weight: bold;
-  src: url('/assets/fonts/OperatorMono-Bold.otf');
+  font-family: 'Dank Mono';
+  src: url('/assets/fonts/DankMono-Regular.otf');
 }
 
 @font-face {
-  font-family: 'Operator Mono';
-  src: url('/assets/fonts/OperatorMono-Regular.otf');
+  font-family: 'Dank Mono';
+  font-style: italic;
+  src: url('/assets/fonts/DankMono-Italic.otf');
 }
 
-html, body {
+html,
+body {
   height: 100%;
   min-height: 100%;
   margin: 0%;
 }
 
 body {
-  font-family: 'Operator Mono', monospace;
+  font-family: 'Dank Mono', monospace;
   height: fit-content;
   display: flex;
   justify-content: center;
@@ -70,14 +69,15 @@ a:hover {
   bottom: 1px;
   right: 5px;
   width: 0px;
-  animation: 1s blink cubic-bezier(.5, .2, .5, 5.0) infinite;
+  animation: 1s blink cubic-bezier(0.5, 0.2, 0.5, 5) infinite;
 }
 
 @keyframes blink {
-  from, to {
-    opacity: 0.0;
+  from,
+  to {
+    opacity: 0;
   }
   50% {
-    opacity: 1.0;
+    opacity: 1;
   }
 }
