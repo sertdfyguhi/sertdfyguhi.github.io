@@ -18,11 +18,12 @@
 .nav a {
   text-decoration: none;
   color: white;
-  transition: letter-spacing 0.55s, text-shadow 0.25s ease-out;
+  transition: letter-spacing 0.55s,
+    text-shadow 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
   margin: 15px;
 }
 
 .nav a:hover {
   letter-spacing: 1px;
-  text-shadow: 10px 15px #e8e8e8b1, 0 0 15px rgba(255, 255, 255, 0.765);
+  text-shadow: 5px 15px #e8e8e8b1, 0 0 15px rgba(255, 255, 255, 0.765);
 }
