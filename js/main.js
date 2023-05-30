@@ -13,23 +13,36 @@ function type(el, text, min = 55, max = 110) {
 }
 
 // random gradient bg
-const rgb1 = [
-  Math.floor(Math.random() * 256),
-  Math.floor(Math.random() * 256),
-  Math.floor(Math.random() * 256),
+function createHSLString(hsl) {
+  return `hsl(${hsl[0]}deg, ${hsl[1]}%, ${hsl[2]}%)`;
+}
+
+const hsl1 = [
+  Math.floor(Math.random() * 360),
+  Math.floor(Math.random() * 100),
+  Math.floor(Math.random() * 100),
 ];
 
-const rgb2 = [
-  Math.floor(Math.random() * 256),
-  Math.floor(Math.random() * 256),
-  Math.floor(Math.random() * 256),
+const hsl2 = [
+  Math.floor(Math.random() * 360),
+  Math.floor(Math.random() * 100),
+  Math.floor(Math.random() * 100),
 ];
 
-document.body.style.background = `linear-gradient(rgb(${rgb1.join(
-  ', '
-)}), rgb(${rgb2.join(', ')}))`;
+document.body.style.background = `linear-gradient(${createHSLString(
+  hsl1
+)}, ${createHSLString(hsl2)})`;
 
 document.body.style.backgroundAttachment = 'fixed';
+
+// setInterval(() => {
+//   hsl1[0] += 1;
+//   hsl2[0] -= 1;
+
+//   document.body.style.background = `linear-gradient(${createHSLString(
+//     hsl1
+//   )}, ${createHSLString(hsl2)})`;
+// }, 150);
 
 // opacity animation
 const elements = document.getElementsByClassName('opacity');
