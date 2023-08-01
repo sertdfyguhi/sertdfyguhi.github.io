@@ -2,10 +2,14 @@
   position: absolute;
   top: 0%;
   right: 0%;
-  padding: 0%;
-  margin-right: 8px;
+
   width: 100%;
-  text-align: right;
+  height: 3ch;
+  margin-top: 1.17em;
+
+  display: flex;
+  gap: 30px;
+  justify-content: right;
   font-style: italic;
 }
 
@@ -16,14 +20,27 @@
 }
 
 .nav a {
-  text-decoration: none;
+  font-size: 1.17em;
+  font-weight: bold;
+
   color: white;
+  text-decoration: none;
   transition: letter-spacing 0.55s,
     text-shadow 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
-  margin: 15px;
 }
 
 .nav a:hover {
   letter-spacing: 1px;
   text-shadow: 5px 15px #e8e8e8b1, 0 0 15px rgba(255, 255, 255, 0.765);
+}
+
+.nav a:first-child {
+  margin-left: 25px;
+  margin-right: auto;
+
+  font-size: 1.2em;
+}
+
+.nav a:last-child {
+  margin-right: 25px;
 }
