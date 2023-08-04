@@ -1,5 +1,9 @@
 const slideshow = document.getElementById('slideshow');
-const slideshow_pos = slideshow.getBoundingClientRect().left;
+var slideshow_pos = slideshow.getBoundingClientRect().left;
+
+window.addEventListener('resize', () => {
+  slideshow_pos = slideshow.getBoundingClientRect().left;
+});
 
 const images = slideshow.children;
 let shown = 0;

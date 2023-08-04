@@ -30,13 +30,18 @@ h2 {
   font-style: italic;
 }
 
-h3 {
-  font-weight: bold;
-}
-
 p {
   margin-left: 1vw;
   margin: 2px;
+}
+
+h1,
+h2,
+h3,
+p,
+li,
+span {
+  transition: font-size 0.4s ease-in-out;
 }
 
 a {
@@ -49,17 +54,37 @@ a:hover {
 }
 
 .info-container {
-  background-color: rgba(255, 255, 255, 0.08);
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
-  padding: 16px 18px;
-  border-radius: 20px;
   color: white;
+  background-color: rgba(255, 255, 255, 0.08);
+
+  width: fit-content;
+  padding: 16px 18px;
+
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+
+  transition: width 0.6s ease-in-out;
+}
+
+@media only screen and (max-width: 700px) {
+  .info-container {
+    width: 75%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  .info-container {
-    width: 80%;
-    padding: 10px 12px;
+  h1 {
+    font-size: 1.65em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  p,
+  li,
+  span {
+    font-size: 0.9em;
   }
 }
 

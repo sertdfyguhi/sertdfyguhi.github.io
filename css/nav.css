@@ -13,20 +13,17 @@
   font-style: italic;
 }
 
-@media only screen and (max-width: 600px) {
-  .nav {
-    width: 70%;
-  }
-}
-
 .nav a {
-  font-size: 1.17em;
+  --fs: 1.17em;
+
+  font-size: var(--fs);
   font-weight: bold;
 
   color: white;
   text-decoration: none;
   transition: letter-spacing 0.55s,
-    text-shadow 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+    text-shadow 0.25s cubic-bezier(0.165, 0.84, 0.44, 1), font-size 0.4s,
+    margin 0.4s;
 }
 
 .nav a:hover {
@@ -38,9 +35,33 @@
   margin-left: 25px;
   margin-right: auto;
 
-  font-size: 1.2em;
+  font-size: calc(var(--fs) + 0.03em);
 }
 
 .nav a:last-child {
   margin-right: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav a {
+    --fs: 1em;
+  }
+
+  .nav a:first-child {
+    margin-left: 18px;
+  }
+
+  .nav a:last-child {
+    margin-right: 18px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .nav a {
+    --fs: 0.9em;
+  }
+
+  .nav {
+    gap: 20px;
+  }
 }
