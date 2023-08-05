@@ -46,7 +46,7 @@
 
 #prev-btn img:hover,
 #next-btn img:hover {
-  height: calc(var(--height) * 1.075);
+  height: calc(var(--height) * 1.085);
   filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.85));
 }
 
